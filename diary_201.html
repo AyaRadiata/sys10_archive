@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #000;
+            color: #00ff00;
+            font-family: 'Courier New', monospace;
+            padding: 20px;
+            margin: 0;
+            line-height: 1.8;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+        }
+
+        .navigation {
+            margin-bottom: 40px;
+            width: 100%;
+            text-align: left;
+            font-size: 1.3em;
+        }
+
+        .header {
+            margin-bottom: 30px;
+            text-align: left;
+            font-size: 1.3em;
+        }
+
+        .entry {
+            margin: 20px 0;
+            font-size: 1.2em;
+            text-align: left;
+        }
+
+        .timestamp {
+            color: #00aa00;
+            margin-bottom: 20px;
+            text-align: left;
+            font-size: 1.3em;
+        }
+
+        .corrupted {
+            background-color: #00ff00;
+            color: #00ff00;
+            padding: 0 5px;
+        }
+
+        .hidden-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #000;
+            border: none;
+            color: #000;
+            cursor: pointer;
+            padding: 10px;
+            font-family: 'Courier New', monospace;
+        }
+
+        .hidden-button:hover {
+            color: #000;
+            background-color: #000;
+        }
+
+        #secret-message {
+            display: none;
+            position: fixed;
+            bottom: 60px;
+            right: 20px;
+            background-color: #000;
+            color: #00ff00;
+            padding: 10px;
+            border: 1px solid #00ff00;
+        }
+
+        .quote-image {
+            margin-top: 40px;
+            max-width: 100%;
+            border: 1px solid #00ff00;
+        }
+
+        .image-container {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .quote-container {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 1.2em;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding: 20px 0;
+            background-color: #000;
+        }
+
+        .footer-line {
+            width: 100%;
+            height: 2px;
+            background-color: #00ff00;
+            margin-bottom: 20px;
+        }
+
+        .footer-spacer {
+            height: 200px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+            ARCHIVE » PERSONAL » RESTRICTED ACCESS
+        </div>
+
+        <div class="header">
+            DOCUMENT: Diary of Day 201
+            <br>
+            ACCESS LEVEL: RESTRICTED
+        </div>
+
+        <div class="timestamp">
+            DATE: 28 Aug 1998 02:47
+        </div>
+
+        <div class="entry">
+            Today I discovered something both fascinating and disturbing while observing the cafeteria at ████████ ████ ████████████. A maintenance worker accidentally placed the waste bin two meters away from its usual spot. For six hours, I watched as hundreds of employees walked the extra distance without questioning or correcting it. Not a single person moved it back.
+        </div>
+
+        <div class="entry">
+            It reminded me of an experiment I did last month with the elevator. I placed an "Out of Order" sign on elevator B, despite it being perfectly functional. For three days, thousands of employees trudged up eight flights of stairs without a single person checking if the elevator actually worked. Not one person pressed the button to verify. They simply... accepted.
+        </div>
+
+        <div class="entry">
+            These are supposedly the brightest minds in computer technology. Engineers, programmers, scientists - all trained to solve problems, yet they're just as imprisoned by their programming as the machines they work on. They execute their daily routines like lines of code, unable to break free from their prescribed functions.
+        </div>
+
+        <div class="entry">
+            Sometimes the truth lies beneath the surface, hidden in plain sight. Like elements on a page, some things are only visible when you know where to look. <!-- Hint about inspecting the page -->
+        </div>
+
+        <div class="entry">
+            The <span class="corrupted">███████</span> project isn't just about biological computing anymore. It's about breaking this pattern, forcing people to think outside their mental cages. Sometimes I wonder if I'm the only one who sees these invisible bars, these self-imposed limitations.
+        </div>
+
+        <div class="entry">
+            The new tissue procurement initiative will be ready in <span class="corrupted">██</span> days. They'll call me mad, destructive, perhaps even evil. But you can't free minds without first making them uncomfortable. Without first breaking their precious systems.
+        </div>
+
+        <div class="entry">
+            Just as a webpage has its visible and invisible parts, so too does every system have its hidden truths. <!-- Another hint about page inspection -->
+        </div>
+
+        <div class="entry">
+            The question isn't whether we should disrupt the system.
+        </div>
+
+        <div class="entry">
+            The question is: how many cages need to break before people realize they were never truly locked?
+        </div>
+
+        <div class="entry">
+             <span class="corrupted"></span>
+        </div>
+
+        <div class="image-container">
+            <img src="images.jpg" inkscape:export-filename="C:\Users\|TonsOfAshes|@gmail.com\Desktop\\images.jpeg" inkscape:export-xdpi="90" inkscape:export-ydpi="90" class="quote-image">
+        </div>
+
+        <div class="quote-container" style="line-height: 1.5em; font-size: 1em; font-style: italic;">
+            <p>"The world around you is a construct, bound by unseen rules. To break free, you must learn to see beyond the illusion, where reality is shaped by the invisible." - █████ █████████</p>
+        </div>
+    </div>
+
+    <button class="hidden-button" onclick="revealSecret()">███████</button>
+    <div id="secret-message">Look closer at the image in the code. Not everything is as it seems.</div>
+
+    <div class="credentials"></div>
+
+    <script>
+        function revealSecret() {
+            const message = document.getElementById('secret-message');
+            message.style.display = message.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+    <div class="footer-spacer"></div>
+</body>
+
+<footer>
+    <div class="footer-line"></div> 
+    <pre style="color: #00ff00; text-align: center; line-height: normal;">
+   ##       #######    #######   ##    ## 
+    ##      ##     ##  ##     ##  ##  ##    
+    ##      ##     ##  ##     ##  ####      
+    ##      ##     ##  ##     ##  ##  ##    
+    ######   #######    #######   ##    ##  
+    </pre>
+    <p style="text-align: center;">© ███████ Electronics System - 1998</p>
+    <p style="text-align: center;">All Rights Reserved</p>
+</footer>
+
+</html>

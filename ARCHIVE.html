@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #000;
+            color: #00ff00;
+            font-family: 'Courier New', monospace;
+            padding: 20px;
+            margin: 0;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1000px;
+        }
+
+        .header {
+            font-size: 1.2em;
+            margin-bottom: 40px;
+            border-bottom: 1px solid #00ff00;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+
+        .archive-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 auto;
+            margin-bottom: 60px;
+            border-bottom: 1px solid #00ff00;
+        }
+
+        .table-header {
+            text-align: left;
+            padding: 10px 15px;
+            border-bottom: 1px solid #00ff00;
+        }
+
+        .folder-row {
+            cursor: pointer;
+        }
+
+        .folder-row:hover {
+            background-color: #003300;
+        }
+
+        .folder-row td {
+            padding: 10px 15px;
+        }
+
+        .folder-icon::before {
+            content: "";
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background-image: url(file.png);
+            background-size: cover;
+            margin-right: 10px;
+        }
+
+        .progress-container {
+            text-align: center;
+            margin-top: 100px;
+            width: 100%;
+        }
+
+        .progress-text {
+            margin-bottom: 20px;
+        }
+
+        .progress-bar {
+            width: 80%;
+            height: 20px;
+            border: 1px solid #00ff00;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .progress-fill {
+            width: 8%;
+            height: 100%;
+            background-color: #00ff00;
+            position: absolute;
+            left: 0;
+        }
+
+        a {
+            color: #00ff00;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .header {
+                font-size: 1em;
+                margin-bottom: 20px;
+            }
+
+            .archive-table {
+                margin-bottom: 30px;
+            }
+
+            .table-header {
+                padding: 8px;
+                font-size: 0.9em;
+            }
+
+            .folder-row td {
+                padding: 8px;
+                font-size: 0.9em;
+            }
+
+            .progress-container {
+                margin-top: 50px;
+            }
+
+            .progress-text {
+                font-size: 0.9em;
+            }
+
+            .progress-bar {
+                width: 90%;
+            }
+
+            .folder-icon {
+                display: inline-block;
+                max-width: 150px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .archive-table {
+                font-size: 0.8em;
+            }
+
+            .table-header {
+                font-size: 0.8em;
+                padding: 5px;
+            }
+
+            .folder-row td {
+                padding: 5px;
+            }
+
+            .progress-bar {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            ARCHIVE
+        </div>
+
+        <table class="archive-table">
+            <tr>
+                <th class="table-header" style="width: 40%">NAME</th>
+                <th class="table-header" style="width: 25%">DATE</th>
+                <th class="table-header" style="width: 15%">TYPE</th>
+                <th class="table-header" style="width: 10%">SIZE</th>
+                <th class="table-header" style="width: 10%">ACCESS LEVEL</th>
+            </tr>
+            <tr class="folder-row">
+                <td><span class="folder-icon"><a href="1.html">1</a></span></td>
+                <td>28 Aug 1998 13:12</td>
+                <td>TXT File</td>
+                <td>31KB</td>
+                <td>A</td>
+            </tr>
+            <tr class="folder-row">
+                <td><span class="folder-icon"><a href="2.html">2</a></span></td>
+                <td>31 Jul 1998 16:45</td>
+                <td>TXT File</td>
+                <td>59KB</td>
+                <td>A</td>
+            </tr>
+            <tr class="folder-row">
+                <td><span class="folder-icon"><a href="3.html">3</a></span></td>
+                <td>09 Aug 1998 14:00</td>
+                <td>TXT File</td>
+                <td>46KB</td>
+                <td>C</td>
+            </tr>
+            <tr class="folder-row">
+                <td><span class="folder-icon"><a href="4.html">4</a></span></td>
+                <td>17 Oct 1998 16:05</td>
+                <td>TXT File</td>
+                <td>33KB</td>
+                <td>B</td>
+            </tr>
+            <tr class="folder-row">
+                <td><span class="folder-icon"><a href="5.html">5</a></span></td>
+                <td>01 Aug 1998 17:23</td>
+                <td>TXT File</td>
+                <td>20KB</td>
+                <td>C</td>
+            </tr>
+            <tr class="folder-row">
+                <td><span class="folder-icon"><a href="6.html">6</a></span></td>
+                <td>01 Aug 1998 17:23</td>
+                <td>TXT File</td>
+                <td>43KB</td>
+                <td>C</td>
+            </tr>
+            <tr class="folder-row">
+                <td><span class="folder-icon"><a href="diary_201.html">diary_201</a></span></td>
+                <td>07 Aug 1998 23:22</td>
+                <td>PDF File</td>
+                <td>265KB</td>
+                <td>-</td>
+            </tr>
+            <tr class="folder-row">
+                <td><span class="folder-icon"><a href="The_Truth.html">███ █████</a></span></td>
+                <td>07 Aug 1998 23:22</td>
+                <td>TXT File</td>
+                <td>35KB</td>
+                <td>-</td>
+            </tr>
+        </table>
+
+        <div class="progress-container">
+            <div class="progress-text">DATABASE DUMP PROGRESS 12%</div>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.folder-row').forEach(row => {
+            row.addEventListener('click', (e) => {
+                if (row.querySelector('a')) {
+                    window.location.href = row.querySelector('a').href;
+                }
+            });
+        });
+    </script>
+</body>
+</html>
