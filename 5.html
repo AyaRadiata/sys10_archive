@@ -164,6 +164,17 @@
             margin-top: 10px;
             display: none;
         }
+        a{
+            color: #00ff00;
+        }
+        a:hover{
+            color: #00aa00;
+        }
+        .fromwho{
+            font-size: 2em;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+        }
     </style>
 </head>
 <body>
@@ -179,7 +190,7 @@
     <div class="content" id="pageContent">
     <div class="container">
         <div class="navigation">
-            ARCHIVE » PERSONAL » RESTRICTED ACCESS
+            <a href="index.html">ARCHIVE</a> » PERSONAL » RESTRICTED ACCESS
         </div>
 
         <div class="header">
@@ -199,7 +210,7 @@
         </div>
 
         <div class="entry">
-            Потеря Dustin сильно сказалась на психологическом состоянии остальных, особенно пострадал ██TO█… он уже давно не выходил на связь. Aaron посадили и школу на какое-то время закрыли, мы все дорожили ими обоими, Aaron бы никогда никого не убил, а Dustin был самым добрым в нашей группе. Я уверен, что █████N и Brett тоже не виновны. Я не могу поверить, что это произошло с ними
+            Потеря Dustin сильно сказалась на психологическом состоянии остальных, особенно пострадал ██TO█… он уже давно не выходил на связь. Aaron посадили и школу на какое-то время закрыли, мы все дорожили ими троими, Aaron бы никогда никого не убил, а Dustin был самым добрым в нашей группе. Я уверен, что █████N и Brett не виновны. Я не могу поверить, что это произошло с ними
         </div>
         
         <div class="entry">
@@ -214,7 +225,7 @@
 
             </pre>
         </div>
-        <div class="entry">
+        <div class="entry fromwho">
             -Shawn
         </div>
     </div>
@@ -232,16 +243,16 @@
     ##      ##     ##  ##     ##  ##  ##    
     ######   #######    #######   ##    ##  
     </pre>
-    <p style="text-align: center;">© ███████ Electronics System - 1998</p>
+    <p style="text-align: center;">© SYS10 Electronics System - 1998</p>
     <p style="text-align: center;">All Rights Reserved</p>
 </footer>
 </div>
 <script>
     function checkPassword() {
         const password = document.getElementById('passwordInput').value;
-        const correctPassword = "InThe";
+        const correctPassword = "inthe";
         
-        if (password === correctPassword) {
+        if (password.toLowerCase() === correctPassword) {
             document.getElementById('passwordPrompt').style.display = 'none';
             document.getElementById('pageContent').style.display = 'block';
             document.getElementById('passwordError').style.display = 'none';

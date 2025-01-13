@@ -164,6 +164,17 @@
             margin-top: 10px;
             display: none;
         }
+        a{
+            color: #00ff00;
+        }
+        a:hover{
+            color: #00aa00;
+        }
+        .fromwho{
+            font-size: 2em;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+        }
     </style>
 </head>
 <body>
@@ -179,7 +190,7 @@
     <div class="content" id="pageContent">
     <div class="container">
         <div class="navigation">
-            ARCHIVE » PERSONAL » RESTRICTED ACCESS
+            <a href="index.html">ARCHIVE</a> » PERSONAL » RESTRICTED ACCESS
         </div>
 
         <div class="header">
@@ -217,7 +228,7 @@
 45678978978465415641321654
             </pre>
         </div>
-        <div class="entry">
+        <div class="entry fromwho">
             -OWEN
         </div>
     </div>
@@ -235,16 +246,16 @@
     ##      ##     ##  ##     ##  ##  ##    
     ######   #######    #######   ##    ##  
     </pre>
-    <p style="text-align: center;">© ███████ Electronics System - 1998</p>
+    <p style="text-align: center;">© SYS10 Electronics System - 1998</p>
     <p style="text-align: center;">All Rights Reserved</p>
 </footer>
 </div>
 <script>
     function checkPassword() {
         const password = document.getElementById('passwordInput').value;
-        const correctPassword = "OWENS";
+        const correctPassword = "owens";
         
-        if (password === correctPassword) {
+        if (password.toLowerCase() === correctPassword) {
             document.getElementById('passwordPrompt').style.display = 'none';
             document.getElementById('pageContent').style.display = 'block';
             document.getElementById('passwordError').style.display = 'none';
